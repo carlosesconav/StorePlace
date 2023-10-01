@@ -33,7 +33,7 @@ class SongsController extends Controller
        $song = new Songs($request->input());
        $song->save();
        
-       return redirect()->route('song.index');
+       return redirect()->route('songs.index');
     }
 
     public function show(Songs $songs)
@@ -51,7 +51,7 @@ class SongsController extends Controller
         $song = Songs::find($id);
         $song->fill($request->input())->saveOrFail();
 
-        return redirect()->route('song.index');
+        return redirect()->route('songs.index');
     }
 
     public function destroy($id)
@@ -59,6 +59,6 @@ class SongsController extends Controller
         $song = Songs::find($id);
         $song->delete();
 
-        return redirect()->route('song.index');
+        return redirect()->route('songs.index');
     }
 }

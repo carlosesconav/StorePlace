@@ -1,9 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import Table from '@/Components/Table.vue';
-import Swal from 'sweetalert2';
+import TableObj from '@/Components/TableObj.vue';
 import { Head, useForm } from '@inertiajs/vue3';
-import { ref } from 'vue';
 
 const form = useForm({});
 
@@ -31,7 +29,7 @@ const song = props.songs;
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-                <Table v-bind:title="title" v-bind:song="song"/>
+                <TableObj v-bind:title="title" v-bind:song="song"/>
             </div>
 
             <div class="max-w-7xl py-2 mx-auto sm:px-6 lg:px-8">
