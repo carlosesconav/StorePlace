@@ -4,6 +4,7 @@ Web application made with vuejs and laravel to manage entered data.
 
 ## Front.
 - Vue3 with javascript.
+- InertiaJs.
 - Vite.
 - TailwindCSS.
 
